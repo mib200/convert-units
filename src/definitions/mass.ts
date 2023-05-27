@@ -36,8 +36,8 @@ const metric: Record<MassMetricUnits, Unit> = {
   },
   '10kg': {
     name: {
-      singular: 'Kilogram',
-      plural: 'Kilograms',
+      singular: '10 Kilograms',
+      plural: '10 Kilograms',
     },
     to_anchor: 10000,
   },
