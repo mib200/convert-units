@@ -1,9 +1,10 @@
 {
   "name": "convert-units-qt",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Convert between quantities in different units",
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",
+  "types": "types/index.d",
   "devDependencies": {
     "@types/jest": "^28.1.6",
     "@typescript-eslint/eslint-plugin": "^5.33.0",
