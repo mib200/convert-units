@@ -2,7 +2,7 @@ import { Measure, Unit } from './../index.js';
 export type MassUnits = MassMetricUnits | MassImperialUnits;
 export type MassSystems = 'metric' | 'imperial';
 
-export type MassMetricUnits = 'mcg' | 'mg' | 'g' | 'kg' | 'qt'  'mt';
+export type MassMetricUnits = 'mcg' | 'mg' | 'g' | 'kg' | 'qt' | '10kg' | 'mt';
 export type MassImperialUnits = 'oz' | 'lb' | 't';
 
 const metric: Record<MassMetricUnits, Unit> = {
@@ -33,6 +33,13 @@ const metric: Record<MassMetricUnits, Unit> = {
       plural: 'Kilograms',
     },
     to_anchor: 1000,
+  },
+  '10kg': {
+    name: {
+      singular: 'Kilogram',
+      plural: 'Kilograms',
+    },
+    to_anchor: 10000,
   },
   qt: {
     name: {
